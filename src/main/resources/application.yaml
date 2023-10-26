@@ -5,7 +5,7 @@ baseUrl: http://bank-service.apps-demo.svc.cluster.local:8990/bank/accounts/getA
 
 spring:
   application:
-    name: app
+    name: customer-app
 
 tracing:
   url: http://jaeger-production-collector.tracing-system.svc.cluster.local:4318/v1/traces
