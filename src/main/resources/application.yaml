@@ -1,14 +1,14 @@
 server:
   port: 8090
 
-baseUrl: http://localhost:9595/bank/accounts/getAccountDetailsByNumber/8119008115
+baseUrl: http://bank-service.apps-demo.svc.cluster.local:8990/bank/accounts/getAccountDetailsByNumber/8119008115
 
 spring:
   application:
     name: app
 
 tracing:
-  url: http://localhost:4318/v1/traces
+  url: http://jaeger-production-collector.tracing-system.svc.cluster.local:4318/v1/traces
 
 management:
   tracing:
