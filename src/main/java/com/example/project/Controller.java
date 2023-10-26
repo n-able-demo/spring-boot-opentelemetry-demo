@@ -35,8 +35,8 @@ public class Controller {
     }
 
     @GetMapping("/method1")
-    public ResponseEntity method1() {
-        System.out.println("inside method1");
+    public ResponseEntity method1(@RequestHeader("uber-trace-id") String apictraceId) {
+        System.out.println("inside method1 - apic trace id:" + apictraceId);
         System.out.println("ibaseUrlSub"+baseUrl);
         logger.info("Incoming request at {} for request /method1 ");
         logger.info("Incoming request at {} for request /method1 ", applicationName);
